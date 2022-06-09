@@ -1,16 +1,21 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "start": "nodemon back-end/server/express.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "n-readlines": "^1.0.1",
+    "neo4j-driver": "^4.4.5",
+    "nodemon": "^2.0.15",
+    "read-yaml-file": "^2.1.0",
+    "write-yaml-file": "^4.2.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.20.0",
+    "eslint": "^8.15.0",
+    "path": "^0.12.7"
   }
 }
